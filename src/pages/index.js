@@ -11,12 +11,13 @@ import { TrafficByDevice } from '../components/dashboard/traffic-by-device';
 import { DashboardLayout } from '../components/dashboard-layout';
 import SearchBar from 'src/components/dashboard/search';
 import Show from 'src/components/dashboard/show';
+import Upload from 'src/components/dashboard/upload';
 
 const Dashboard = () => (
   <>
     <Head>
       <title>
-        Dashboard | Agent
+        3rd page
       </title>
     </Head>
     <Box
@@ -90,6 +91,15 @@ const Dashboard = () => (
             xs={12}
           >
             <LatestOrders />
+          </Grid>
+<Grid
+            item
+            lg={12}
+            md={12}
+            xl={12}
+            xs={12}
+          >
+            <Upload/>
           </Grid>
         </Grid>
       </Container>
